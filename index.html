@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="musicapp-preview">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MusicApp - Preview</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="prw-src/css/preview.css">
+  <link rel="stylesheet" href="prw-src/css/animate.css">
+  <script src="src/js/jquery.min.js"></script>
+</head>
+<body device-style="ios" device-size="standard" theme-color="rose">
+  <!-- hosting required -->
+  <!--<div class="loading-page"><div class="counter-container"><div class="counter"><h1>0</h1><div class="binary-container"><hr width="0"><div class="binary-loader"></div></div></div></div></div>-->
+
+  <div class="container">
+    <div class="overlay"></div>
+    <a href="pages/index.html" class="mobile-button-demo-site"><button><span class="text">Demo Site</span></button></a>
+    <div class="fixed-menu-disclaimer close">
+      <div class="disclaimer">
+        <div class="main-grid">
+          <div class="inner">
+            <p>The Transparent Blur effect is compatible only on <strong>Safari Mac</strong>, <strong>IOS</strong> and <strong>Chrome (Mac and Windows)</strong> with <strong><a href="https://developers.google.com/web/updates/2014/03/Get-on-the-CSS-Grid" target="_blank">Enabled Experimental Web Platform Features</a></strong>.</p>
+            <div class="understand-button"><button>I Understand</button></div>   
+          </div>
+        </div>
+      </div>
+      <div class="fixed-menu">
+        <div class="main-grid">
+          <div class="inner">
+            <button class="close"><svg width="15" height="15" viewBox="0 0 15 15"><path fill="#120810" fill-rule="evenodd" d="M7.778 4.95L4.243 1.414a2 2 0 1 0-2.828 2.828L4.95 7.779l-3.536 3.536a2 2 0 1 0 2.829 2.828l3.535-3.535 3.536 3.535a2 2 0 1 0 2.828-2.828l-3.535-3.536 3.535-3.535a2 2 0 1 0-2.828-2.828L7.778 4.95z"/></svg></button>
+            <div class="navbar-container options-container">
+              <nav class="navbar">
+                <div class="nav-menu-container devices-container-nav">
+                  <span class="options-type">Resolution</span>
+                  <div id="devices-nav" class="wrapper-dropdown device-width-choose wrapper-dropdown-1" tabindex="1">
+                    <span>Standard</span>
+                    <div class="triangle">
+                      <svg width="11" height="7" viewBox="0 0 11 7"><path fill="#120810" fill-rule="evenodd" d="M4.73 6.704L.253 1.664A1 1 0 0 1 1 0h8.957a1 1 0 0 1 .747 1.664l-4.478 5.04a1 1 0 0 1-1.495 0z"/></svg>
+                    </div>
+                    <ul class="dropdown">
+                      <li class="standard" device-active="active"><a href="#">Standard</a></li>
+                      <li class="iphoneSE"><a href="#">iPhone SE</a></li>
+                      <li class="iphone8"><a href="#">iPhone 8</a></li>
+                      <li class="iphone8Plus"><a href="#">iPhone 8 Plus</a></li>
+                      <li class="iphoneX"><a href="#">iPhone X</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="nav-menu-container example-container-nav">
+                  <span class="options-type">Home Page</span>
+                  <div id="example-nav" class="wrapper-dropdown example-homepage wrapper-dropdown-2" tabindex="1">
+                    <span>Example 1</span>
+                    <div class="triangle">
+                      <svg width="11" height="7" viewBox="0 0 11 7"><path fill="#120810" fill-rule="evenodd" d="M4.73 6.704L.253 1.664A1 1 0 0 1 1 0h8.957a1 1 0 0 1 .747 1.664l-4.478 5.04a1 1 0 0 1-1.495 0z"/></svg>
+                    </div>
+                    <ul class="dropdown">
+                      <li class="example-1" device-active="active"><a href="#">Example 1</a></li>
+                      <li class="example-2"><a href="#">Example 2</a></li>
+                      <li class="example-3"><a href="#">Example 3</a></li>
+                      <li class="example-4"><a href="#">Example 4</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="nav-menu-container colors-container-nav">
+                  <span class="options-type">Theme</span>
+                  <div id="colors-nav" class="wrapper-dropdown colors-dropdown wrapper-dropdown-3" tabindex="1">
+                    <span class="title">Rose</span>
+                    <div class="triangle">
+                      <svg width="11" height="7" viewBox="0 0 11 7"><path fill="#120810" fill-rule="evenodd" d="M4.73 6.704L.253 1.664A1 1 0 0 1 1 0h8.957a1 1 0 0 1 .747 1.664l-4.478 5.04a1 1 0 0 1-1.495 0z"/></svg>
+                    </div>
+                    <ul class="dropdown">
+                      <li class="red"><span class="colors-square colors-red"></span><a href="#">Red</a></li>
+                      <li class="purple"><span class="colors-square colors-purple"></span><a href="#">Purple</a></li>
+                      <li class="blue"><span class="colors-square colors-blue"></span><a href="#">Blue</a></li>
+                      <li class="green"><span class="colors-square colors-green"></span><a href="#">Green</a></li>
+                      <li class="yellow"><span class="colors-square colors-yellow"></span><a href="#">Yellow</a></li>
+                      <li class="rose" device-active="active"><span class="colors-square colors-rose"></span><a href="#">Rose</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="main-header-container">
+      <div class="main-grid">
+        <div class="inner">
+          <div class="left">
+            <a href="pages/index.html" class="button-demo-site"><button><span class="text">Demo Site</span><span class="text-hover">Test on your smartphone</span></button></a>
+            <div class="button-settings-container">
+              <button><svg width="22" height="22" viewBox="0 0 22 22"><defs><circle id="a" cx="8.5" cy="3.5" r="3.5"/><circle id="b" cx="13.5" cy="3.5" r="3.5"/></defs><g fill="none" fill-rule="evenodd"><g transform="translate(0 2)"><rect width="22" height="3" y="2" fill="#FFF" rx="1.5"/><use fill="#FFF" xlink:href="#a"/><circle cx="8.5" cy="3.5" r="4.5" stroke="#312B30" stroke-width="2"/></g><g transform="translate(0 13)"><rect width="22" height="3" y="2" fill="#FFF" rx="1.5"/><use fill="#FFF" xlink:href="#b"/><circle cx="13.5" cy="3.5" r="4.5" stroke="#312B30" stroke-width="2"/></g></g></svg></button>
+              <span>Settings</span>
+            </div>
+          </div>
+          <div class="right">
+            <div class="musicapp-logo"><a href="index.html"><img src="prw-src/images/musicapp-logo.png" width="100%" height="auto"></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devices-container device-width">
+      <div class="devices-inner main-grid">
+        <div class="sections-screens-container">
+          <div class="sections-screens-wrapper">
+            <div class="preview-screens">
+              <iframe class="iframe iframe-browse" src="pages/index.html" frameborder="0" scrolling="no"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script type="text/javascript" src="prw-src/js/preview-script.js"></script>
+</body>
+</html>
